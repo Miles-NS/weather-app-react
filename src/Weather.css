@@ -1,0 +1,53 @@
+#weather-box {
+  border: transparent;
+  padding: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgb(252, 234, 248);
+  box-shadow: 0 15px 18px 0px rgba(0, 0, 0, 0.2);
+}
+#city-input {
+  padding: 5px 15px;
+  margin: 10px;
+  border: transparent;
+  background-color: rgb(255, 177, 188);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#search-input {
+  border: 1px solid rgb(255, 177, 188);
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#icon {
+  font-size: 60px;
+  margin: 10px;
+}
+.container {
+  padding: 20px;
+}
+#currentTempBox,
+#weather-info {
+  background-color: rgba(241, 249, 255, 0.7);
+  border-radius: 10px;
+}
+#forecast .col {
+  background-color: rgba(213, 238, 255, 0.5);
+  margin: 0 3px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+#temp {
+  font-size: 35px;
+  color: #cb545a;
+  font-weight: bold;
+}
+#wind,
+#decription,
+#humidity {
+  font-size: 20px;
+  font-weight: bold;
+}
