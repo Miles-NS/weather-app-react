@@ -18,7 +18,7 @@ export default function Weather(props) {
       feels: response.data.temperature.feels_like,
       country: response.data.country,
       description: response.data.condition.description,
-      icon: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
+      icon: response.data.condition.icon_url,
       date: new Date(response.data.time * 1000),
     });
   }
@@ -32,6 +32,7 @@ export default function Weather(props) {
   function search() {
     const apiKey = "f6o0c2ff290db7742a02f3a3t7d67c34";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
     axios.get(apiUrl).then(handleResponse);
   }
   if (weatherData.ready) {
@@ -48,12 +49,13 @@ export default function Weather(props) {
               placeholder="Enter city..."
               className="enterCity"
               id="search-input"
+              onChange={handleCityChange}
             />
             <input
               type="submit"
               value="search"
               id="city-input"
-              onChange={handleCityChange}
+              onChange={search}
             />
           </form>
           <WeatherInfo data={weatherData} />
