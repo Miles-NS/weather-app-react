@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity= "Manzini" />
       <footer>
         <a href="https://github.com/Miles-NS/weather-app-react.git">
           open-source code
