@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
         </h2>
         <CurrentDate date={props.data.date} />
         <div id="icon">
-          <img src={props.data.icon} alt={props.data.description} />
+          <img src={props.data.icon} alt={props.data.description} width="200" />
         </div>
         <div className="container mb-3">
           <div className="row">
